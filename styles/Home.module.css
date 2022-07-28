@@ -4,6 +4,7 @@
   flex: 1;
   flex-direction: column;
   justify-content: center;
+  width: 100vw;
 }
 
 .header{
@@ -18,7 +19,7 @@
 
 .footer {
   align-items: center;
-  background: #010e33;
+  background: #023049;
   border-top: 1px solid #eaeaea;
   display: flex;
   flex: 1;
@@ -58,35 +59,46 @@
   color: green;
 }
 
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-  Bitstream Vera Sans Mono, Courier New, monospace;
-  font-size: 1.1rem;
-  padding: 0.75rem;
-}
 
 .grid {
-  align-items: center;
+  
   display: flex;
   flex-wrap: wrap;
-  height: 60vh;
-  justify-content: center;
-  max-width: 800px;
+  min-height: 60vh;
+  justify-content:start;
+  margin: 0 10vw;
+  max-width: 100vw;
 }
 
 .card {
   border: 2px solid #eaeaea;
   border-radius: 10px;
   color: inherit;
-  height: 280px;
-  margin: 0 1rem;
-  max-width: 300px;
+  
+  margin: 1rem;
+  width: 500px;
   padding: 1.5rem;
   text-align: left;
   text-decoration: none;
   transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card__form {
+  background: rgba(255, 255, 255, 0.829);
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  color: inherit;
+  min-height: 500px;
+  margin: 1rem;
+  width: 500px;
+  padding: 1.5rem;
+  text-align: left;
+  text-decoration: none;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.card__form h2{
+  text-align: center;
 }
 
 .card:hover,
@@ -110,6 +122,34 @@
   font-size: 1.25rem;
   line-height: 1.5;
   margin: 0;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.label{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input__padrao {
+  margin: .3rem;
+  padding: .3rem;
+  width: 250px;
+}
+
+.input__menor{
+  width: 50px;
+  margin: .3rem .3rem .3rem 2.5rem;
+  padding: .3rem;
+}
+
+.input__botao{
+  margin-top: 1rem;
 }
 
 .logo {
